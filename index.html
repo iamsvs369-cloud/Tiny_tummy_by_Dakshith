@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Dakshith's favorite foods — wholesome mains, fresh fruits, dry fruits, and sweet treats." />
+	<title>Little Dakshith's Favorites</title>
+	<link rel="icon" href="assets/images/dakshith-logo.png" type="image/png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/dakshith.css?v=5" />
+	<script src="assets/js/hero-animation.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="#" aria-label="Dakshith's Adventures — home">
+				<img src="assets/images/dakshith-logo.png" alt="Dakshith's Adventures — Discover, Play, Grow" width="160" height="160" />
+			</a>
+			<nav class="site-nav" aria-label="Primary">
+				<ul>
+					<li><a href="#mains">Main Meals</a></li>
+					<li><a href="#fruits">Fruits</a></li>
+					<li><a href="#veggies">Veggies</a></li>
+					<li><a href="#dry-fruits">Dry Fruits</a></li>
+					<li><a href="#fries">Fries</a></li>
+					<li><a href="#treats">Treats</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+	
+	<main id="main">
+		<div class="hero-scroll-container">
+			<div class="hero-sticky-element">
+				<section class="hero" aria-labelledby="hero-heading">
+					<div class="container hero-inner">
+						<div class="hero-copy">
+							<p class="hero-eyebrow">Tiny tummy, big smiles</p>
+							<h1 id="hero-heading">Dakshith's Food Diary</h1>
+							<p class="hero-lead">
+								Every bite is a little adventure. From fluffy doshas at breakfast to juicy mangoes
+								after nap time, here are the wholesome favorites that keep our little one happy,
+								nourished, and ready for the day.
+							</p>
+						</div>
+						<div class="hero-animation-container">
+							<div id="hero-loader-overlay" class="hero-loader-overlay">
+								<div class="hero-loader-spinner"></div>
+								<div class="hero-loader-text">
+									Loading delicious memories... <span id="hero-loader-percentage">0%</span>
+								</div>
+								<div class="hero-loader-progress-bar">
+									<div id="hero-loader-progress" class="hero-loader-progress"></div>
+								</div>
+							</div>
+							<canvas id="hero-canvas"></canvas>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<section id="mains" class="section section-mains">
+			<div class="container">
+				<header class="section-header">
+					<h2>Favorite Mains &amp; Breakfasts</h2>
+					<p>Comforting South Indian staples and everyday bites he reaches for again and again.</p>
+				</header>
+				<div class="mains-grid">
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/crispy%20dosha.jpg" alt="Crispy Dosa" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Crispy Dosa</div>
+						</div>
+					</article>
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/uzhunnu%20vada.jpg" alt="Uzhunnu Vada" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Uzhunnu Vada</div>
+						</div>
+					</article>
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/chapati.jpg" alt="Soft Chapati" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Soft Chapati</div>
+						</div>
+					</article>
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/upmav.jpg" alt="Wholesome Upmav" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Wholesome Upmav</div>
+						</div>
+					</article>
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/nei%20pathiri.png" alt="Nei Pathiri" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Nei Pathiri</div>
+						</div>
+					</article>
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/nice%20pathiri.png" alt="Nice Pathiri" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Nice Pathiri</div>
+						</div>
+					</article>
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/idli.jpg" alt="Fluffy Idli" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Fluffy Idli</div>
+						</div>
+					</article>
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/poori.jpg" alt="Puffed Poori" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Puffed Poori</div>
+						</div>
+					</article>
+					<article class="meal-card" data-animate>
+						<div class="meal-image-container">
+							<img src="assets/images/mainmeals/bread.jpg" alt="Soft Bread" loading="lazy" />
+							<div class="meal-overlay"></div>
+							<div class="meal-label">Soft Bread</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="fruits" class="section section-fruits">
+			<div class="container">
+				<header class="section-header">
+					<h2>Fresh Fruits He Loves</h2>
+					<p>Bright, juicy picks that bring color and natural sweetness to every snack time.</p>
+				</header>
+			</div>
+			
+			<div class="fruit-marquee-container">
+				<div class="fruit-marquee-track">
+					<!-- Card 1: Anaar -->
+					<article class="fruit-card fruit-anaar">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/anaar.jpg" alt="Anaar" />
+						</div>
+						<h3>Anaar</h3>
+						<p>Bright ruby pearls of sweetness</p>
+					</article>
+					<!-- Card 2: Apple -->
+					<article class="fruit-card fruit-apple">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/apple.webp" alt="Apple" />
+						</div>
+						<h3>Apple</h3>
+						<p>Crisp, sweet, and doctor-approved</p>
+					</article>
+					<!-- Card 3: Banana -->
+					<article class="fruit-card fruit-banana">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/banana.jpg" alt="Banana" />
+						</div>
+						<h3>Banana</h3>
+						<p>Soft, energy-rich, and easy to peel</p>
+					</article>
+					<!-- Card 4: Grapes -->
+					<article class="fruit-card fruit-grapes">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/grapees.jpg" alt="Grapes" />
+						</div>
+						<h3>Grapes</h3>
+						<p>Juicy, bite-sized sweet treats</p>
+					</article>
+					<!-- Card 5: Guava -->
+					<article class="fruit-card fruit-guava">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/guava.jpg" alt="Guava" />
+						</div>
+						<h3>Guava</h3>
+						<p>Fragrant, crisp, and high in fiber</p>
+					</article>
+					<!-- Card 6: Mango -->
+					<article class="fruit-card fruit-mango">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/mango.jpg" alt="Mango" />
+						</div>
+						<h3>Mango</h3>
+						<p>The golden, sweet king of fruits</p>
+					</article>
+					<!-- Card 7: Papaya -->
+					<article class="fruit-card fruit-papaya">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/papaya.jpg" alt="Papaya" />
+						</div>
+						<h3>Papaya</h3>
+						<p>Soft, tropical, and easy to digest</p>
+					</article>
+					<!-- Card 8: Pineapple -->
+					<article class="fruit-card fruit-pineapple">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/pineapple.jpg" alt="Pineapple" />
+						</div>
+						<h3>Pineapple</h3>
+						<p>Tangy, sweet, and tropical sunshine</p>
+					</article>
+					<!-- Card 9: Watermelon -->
+					<article class="fruit-card fruit-watermelon">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/watermelon.jpg" alt="Watermelon" />
+						</div>
+						<h3>Watermelon</h3>
+						<p>Refreshing, hydrating, and sweet</p>
+					</article>
+
+					<!-- DUPLICATED CARDS FOR INFINITE SCROLLING (aria-hidden="true" for screen readers) -->
+					<!-- Card 1 Duplicate -->
+					<article class="fruit-card fruit-anaar" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/anaar.jpg" alt="" />
+						</div>
+						<h3>Anaar</h3>
+						<p>Bright ruby pearls of sweetness</p>
+					</article>
+					<!-- Card 2 Duplicate -->
+					<article class="fruit-card fruit-apple" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/apple.webp" alt="" />
+						</div>
+						<h3>Apple</h3>
+						<p>Crisp, sweet, and doctor-approved</p>
+					</article>
+					<!-- Card 3 Duplicate -->
+					<article class="fruit-card fruit-banana" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/banana.jpg" alt="" />
+						</div>
+						<h3>Banana</h3>
+						<p>Soft, energy-rich, and easy to peel</p>
+					</article>
+					<!-- Card 4 Duplicate -->
+					<article class="fruit-card fruit-grapes" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/grapees.jpg" alt="" />
+						</div>
+						<h3>Grapes</h3>
+						<p>Juicy, bite-sized sweet treats</p>
+					</article>
+					<!-- Card 5 Duplicate -->
+					<article class="fruit-card fruit-guava" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/guava.jpg" alt="" />
+						</div>
+						<h3>Guava</h3>
+						<p>Fragrant, crisp, and high in fiber</p>
+					</article>
+					<!-- Card 6 Duplicate -->
+					<article class="fruit-card fruit-mango" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/mango.jpg" alt="" />
+						</div>
+						<h3>Mango</h3>
+						<p>The golden, sweet king of fruits</p>
+					</article>
+					<!-- Card 7 Duplicate -->
+					<article class="fruit-card fruit-papaya" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/papaya.jpg" alt="" />
+						</div>
+						<h3>Papaya</h3>
+						<p>Soft, tropical, and easy to digest</p>
+					</article>
+					<!-- Card 8 Duplicate -->
+					<article class="fruit-card fruit-pineapple" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/pineapple.jpg" alt="" />
+						</div>
+						<h3>Pineapple</h3>
+						<p>Tangy, sweet, and tropical sunshine</p>
+					</article>
+					<!-- Card 9 Duplicate -->
+					<article class="fruit-card fruit-watermelon" aria-hidden="true">
+						<div class="fruit-img-wrapper">
+							<img src="assets/images/fruits/watermelon.jpg" alt="" />
+						</div>
+						<h3>Watermelon</h3>
+						<p>Refreshing, hydrating, and sweet</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="veggies" class="section section-veggies">
+			<div class="container">
+				<header class="section-header">
+					<h2>Wholesome Veggies He Enjoys</h2>
+					<p>Colorful, fresh, and nutritious picks that make veggies fun and tasty.</p>
+				</header>
+				<div class="veggies-grid">
+					<article class="veggie-card veggie-carrot" data-animate-veggie>
+						<div class="veggie-img-wrapper">
+							<img src="assets/images/veggies/carrot.jpg" alt="Carrot" loading="lazy" />
+						</div>
+						<h3>Carrot</h3>
+						<p>Sweet, orange crunch</p>
+					</article>
+					<article class="veggie-card veggie-corn" data-animate-veggie>
+						<div class="veggie-img-wrapper">
+							<img src="assets/images/veggies/corn.jpg" alt="Corn" loading="lazy" />
+						</div>
+						<h3>Corn</h3>
+						<p>Golden, juicy pearls</p>
+					</article>
+					<article class="veggie-card veggie-cucumber" data-animate-veggie>
+						<div class="veggie-img-wrapper">
+							<img src="assets/images/veggies/cucumber.jpg" alt="Cucumber" loading="lazy" />
+						</div>
+						<h3>Cucumber</h3>
+						<p>Cool, hydrating sticks</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="dry-fruits" class="section section-dry-fruits">
+			<div class="container">
+				<header class="section-header">
+					<h2>Healthy Crunch: Dry Fruits</h2>
+					<p>A neat daily dose of nutrients — small bites, big goodness.</p>
+				</header>
+				<ul class="dry-fruit-list">
+					<li class="dry-fruit-item" data-animate-dry>
+						<div class="dry-fruit-img-wrapper">
+							<img class="dry-fruit-bowl-img" src="assets/images/dryfruitsbowl/datesbowl.png" alt="Dates in bowl" loading="lazy" />
+							<img class="dry-fruit-flying-img" src="assets/images/dryfruits/dates.jpg" alt="Dates flying" loading="lazy" />
+						</div>
+						<span class="dry-fruit-name">Dates</span>
+						<span class="dry-fruit-note">Naturally sweet energy</span>
+					</li>
+					<li class="dry-fruit-item" data-animate-dry>
+						<div class="dry-fruit-img-wrapper">
+							<img class="dry-fruit-bowl-img" src="assets/images/dryfruitsbowl/resinbowl.jpg" alt="Raisins in bowl" loading="lazy" />
+							<img class="dry-fruit-flying-img" src="assets/images/dryfruits/resins.jpg" alt="Raisins flying" loading="lazy" />
+						</div>
+						<span class="dry-fruit-name">Grapes (Raisins)</span>
+						<span class="dry-fruit-note">Tiny chewy bursts</span>
+					</li>
+					<li class="dry-fruit-item" data-animate-dry>
+						<div class="dry-fruit-img-wrapper">
+							<img class="dry-fruit-bowl-img" src="assets/images/dryfruitsbowl/cashewbowl.jpg" alt="Cashews in bowl" loading="lazy" />
+							<img class="dry-fruit-flying-img" src="assets/images/dryfruits/cashews.jpg" alt="Cashews flying" loading="lazy" />
+						</div>
+						<span class="dry-fruit-name">Cashews</span>
+						<span class="dry-fruit-note">Creamy &amp; mild</span>
+					</li>
+					<li class="dry-fruit-item" data-animate-dry>
+						<div class="dry-fruit-img-wrapper">
+							<img class="dry-fruit-bowl-img" src="assets/images/dryfruitsbowl/almondbowl.jpg" alt="Almonds in bowl" loading="lazy" />
+							<img class="dry-fruit-flying-img" src="assets/images/dryfruits/almonds.jpg" alt="Almonds flying" loading="lazy" />
+						</div>
+						<span class="dry-fruit-name">Almonds</span>
+						<span class="dry-fruit-note">Crunchy &amp; wholesome</span>
+					</li>
+					<li class="dry-fruit-item" data-animate-dry>
+						<div class="dry-fruit-img-wrapper">
+							<img class="dry-fruit-bowl-img" src="assets/images/dryfruitsbowl/groundnut bowl.jpg" alt="Groundnuts in bowl" loading="lazy" />
+							<img class="dry-fruit-flying-img" src="assets/images/dryfruits/groundnut.jpg" alt="Groundnuts flying" loading="lazy" />
+						</div>
+						<span class="dry-fruit-name">Groundnuts</span>
+						<span class="dry-fruit-note">Nutty &amp; roasted goodness</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="fries" class="section section-fries">
+			<div class="container">
+				<header class="section-header">
+					<h2>Dakshith's Favorite Golden Fries &amp; Crisps</h2>
+					<p>Crunchy, gold-fried snacks that bring a happy smile to his face.</p>
+				</header>
+				<div class="fries-grid">
+					<article class="fries-card fry-banana-chips" data-animate-fries>
+						<div class="fry-img-wrapper">
+							<img src="assets/images/fries/banana%20chips.jpg" alt="Banana Chips" loading="lazy" />
+						</div>
+						<h3>Banana Chips</h3>
+						<p>Golden, crunchy coconut oil chips</p>
+					</article>
+					<article class="fries-card fry-potato-fry" data-animate-fries>
+						<div class="fry-img-wrapper">
+							<img src="assets/images/fries/potato%20fry.jpg" alt="Potato Fry" loading="lazy" />
+						</div>
+						<h3>Potato Fry</h3>
+						<p>Classic golden, crispy home fries</p>
+					</article>
+					<article class="fries-card fry-murukku" data-animate-fries>
+						<div class="fry-img-wrapper">
+							<img src="assets/images/fries/murukku.jpg" alt="Murukku" loading="lazy" />
+						</div>
+						<h3>Murukku</h3>
+						<p>Traditional savory spiral twist</p>
+					</article>
+					<article class="fries-card fry-achappam" data-animate-fries>
+						<div class="fry-img-wrapper">
+							<img src="assets/images/fries/achappam.jpg" alt="Achappam" loading="lazy" />
+						</div>
+						<h3>Achappam</h3>
+						<p>Intricate, crispy sweet rose biscuit</p>
+					</article>
+					<article class="fries-card fry-jack-fruit-fry" data-animate-fries>
+						<div class="fry-img-wrapper">
+							<img src="assets/images/fries/jack%20fruit%20fry.jpg" alt="Jack Fruit Fry" loading="lazy" />
+						</div>
+						<h3>Jackfruit Fry</h3>
+						<p>Sweet, crispy local jackfruit strips</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="treats" class="section section-treats">
+			<div class="container">
+				<header class="section-header">
+					<h2>Favorite Sweet Treats</h2>
+					<p>The special-occasion smiles — saved for the sweetest moments.</p>
+				</header>
+				<div class="treat-cards">
+					<article class="treat-card treat-dark-fantasy" data-animate-treats>
+						<div class="treat-badge">Top Pick</div>
+						<div class="treat-img-wrapper">
+							<img src="assets/images/treats/dark%20fantasy%20biscuit.jpg" alt="Dark Fantasy" loading="lazy" />
+						</div>
+						<h3>Dark Fantasy</h3>
+						<p>Molten chocolate-filled cookie delight</p>
+					</article>
+					<article class="treat-card treat-bourbon" data-animate-treats>
+						<div class="treat-badge">Classic</div>
+						<div class="treat-img-wrapper">
+							<img src="assets/images/treats/bourbon%20biscuit.jpg" alt="Bourbon Biscuit" loading="lazy" />
+						</div>
+						<h3>Bourbon Biscuit</h3>
+						<p>Classic chocolate cream sandwich biscuit</p>
+					</article>
+					<article class="treat-card treat-chocolates" data-animate-treats>
+						<div class="treat-badge">Sweet Bite</div>
+						<div class="treat-img-wrapper">
+							<img src="assets/images/treats/chocolates.jpg" alt="Chocolates" loading="lazy" />
+						</div>
+						<h3>Chocolates</h3>
+						<p>Rich, smooth cocoa squares</p>
+					</article>
+					<article class="treat-card treat-cake" data-animate-treats>
+						<div class="treat-badge">Bakery Special</div>
+						<div class="treat-img-wrapper">
+							<img src="assets/images/treats/cake.jpg" alt="Cake" loading="lazy" />
+						</div>
+						<h3>Soft Cake</h3>
+						<p>Fluffy, sweet slice of baked goodness</p>
+					</article>
+					<article class="treat-card treat-icecream" data-animate-treats>
+						<div class="treat-badge">Cool Treat</div>
+						<div class="treat-img-wrapper">
+							<img src="assets/images/treats/icecream.jpg" alt="Ice Cream" loading="lazy" />
+						</div>
+						<h3>Ice Cream</h3>
+						<p>Cool, creamy vanilla dream cone</p>
+					</article>
+					<article class="treat-card treat-boost" data-animate-treats>
+						<div class="treat-badge">Energy Drink</div>
+						<div class="treat-img-wrapper">
+							<img src="assets/images/treats/boost.jpg" alt="Boost" loading="lazy" />
+						</div>
+						<h3>Boost</h3>
+						<p>Energy-packed chocolate health drink</p>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+
+
+
+	<footer class="site-footer">
+		
+	</footer>
+	
+	<div  style="background-color: green; padding-top: 10px; padding-bottom: 10px;">
+		<p style="text-align: center; background-color: green; color: white;">
+			Made with love for Dakshith.
+        </p>
+	</div>
+
+
+	</body>
+</html>
